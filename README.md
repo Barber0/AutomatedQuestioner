@@ -23,4 +23,7 @@
     + ElasticSearch
     + BM25
     + TF-IDF
-3. [keyword_extractor.py](./data_provider/keyword_extractor.py): 关键词提取器。用于在实际生成过程中，从外来文章中提取出用于推断的关键词。
+3. [keyword_extractor.py](./data_provider/keyword_extractor.py): 关键词提取器。用于在实际生成过程中，从外来文章中提取出用于推断的关键词。具体原理借鉴了一下算法:
+
+    + Text-Rank Algorithm: 一种借鉴了Google PageRank算法的关键词提取算法，运用图结构，从长文本中选出具有概括性的关键词。
+    + PageRank
